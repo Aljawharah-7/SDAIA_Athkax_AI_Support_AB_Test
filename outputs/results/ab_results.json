@@ -1,0 +1,135 @@
+{
+  "primary": {
+    "mean_control": 11.540341374474053,
+    "mean_treatment": 10.511884425036392,
+    "diff": -1.0284569494376612,
+    "ci_low": -1.5769347475854512,
+    "ci_high": -0.47997915128987123,
+    "p_value": 0.00023889644555086242,
+    "n_control": 3565,
+    "n_treatment": 3435,
+    "pct_change": -8.911841652383812,
+    "pct_low": -13.664541597300186,
+    "pct_high": -4.159141707467437,
+    "median_control": 8.014,
+    "median_treatment": 7.11,
+    "mannwhitney_p": 2.709797572125002e-13,
+    "bootstrap": {
+      "point": -8.911841652383812,
+      "ci_low": -13.412858015372013,
+      "ci_high": -4.069091173790993
+    }
+  },
+  "cuped": {
+    "mean_control": 11.526908509608075,
+    "mean_treatment": 10.525825666156388,
+    "diff": -1.0010828434516874,
+    "ci_low": -1.5338315392279158,
+    "ci_high": -0.4683341476754589,
+    "p_value": 0.00023171615142891788,
+    "n_control": 3565,
+    "n_treatment": 3435,
+    "pct_change": -8.674638045508523,
+    "pct_low": -13.291041308540317,
+    "pct_high": -4.0582347824767275,
+    "theta": 1.355036918240956,
+    "variance_reduction_pct": 5.69340695636309
+  },
+  "mechanism": {
+    "bot_resolved_share_B": 0.10858806404657934,
+    "escalation_rate_B": 0.8914119359534207,
+    "mean_hours_bot_resolved": 0.45044235924932974,
+    "mean_hours_escalated_B": 11.737527106466361
+  },
+  "first_response": {
+    "mean_control": 3.416821999895128,
+    "mean_treatment": 0.003869224645828571,
+    "diff": -3.4129527752492996,
+    "ci_low": -3.4385421334943826,
+    "ci_high": -3.3873634170042166,
+    "p_value": 0.0,
+    "n_control": 3565,
+    "n_treatment": 3435,
+    "pct_change": -96.7056218963301,
+    "p_holm": 0.0
+  },
+  "segments_by_priority": [
+    {
+      "segment": "priority=Low",
+      "mean_control": 12.784921731123388,
+      "mean_treatment": 11.903746987951807,
+      "diff": -0.8811747431715808,
+      "ci_low": -1.9709756116424189,
+      "ci_high": 0.20862612529925717,
+      "p_value": 0.11296552093689671,
+      "n_control": 1086,
+      "n_treatment": 1079,
+      "pct_change": -6.892296735978168,
+      "pct_low": -15.416407335872151,
+      "pct_high": 1.6318138639158142,
+      "p_holm": 0.13556478928125193
+    },
+    {
+      "segment": "priority=Medium",
+      "mean_control": 11.686431614349774,
+      "mean_treatment": 10.501907517899763,
+      "diff": -1.1845240964500103,
+      "ci_low": -1.9634047931620109,
+      "ci_high": -0.4056433997380098,
+      "p_value": 0.002885935171865306,
+      "n_control": 1784,
+      "n_treatment": 1676,
+      "pct_change": -10.135892080141321,
+      "pct_low": -16.800721194921,
+      "pct_high": -3.471062965361643,
+      "p_holm": 0.008657805515595918
+    },
+    {
+      "segment": "priority=High",
+      "mean_control": 9.220572661870504,
+      "mean_treatment": 8.32791617647059,
+      "diff": -0.8926564853999146,
+      "ci_low": -1.850657436805382,
+      "ci_high": 0.06534446600555277,
+      "p_value": 0.06778239464062596,
+      "n_control": 695,
+      "n_treatment": 680,
+      "pct_change": -9.681139318941483,
+      "pct_low": -20.070959848929316,
+      "pct_high": 0.7086812110463523,
+      "p_holm": 0.13556478928125193
+    }
+  ],
+  "guardrails": [
+    {
+      "rate_control": 0.08976157082748948,
+      "rate_treatment": 0.09374090247452693,
+      "diff": 0.003979331647037454,
+      "ci_low": -0.009550133709603932,
+      "ci_high": 0.01750879700367884,
+      "p_value": 0.5641649508922111,
+      "n_control": 3565,
+      "n_treatment": 3435,
+      "name": "Reopen rate (7d)",
+      "margin": 0.02,
+      "status": "PASS"
+    },
+    {
+      "mean_control": 3.9088997897687454,
+      "mean_treatment": 3.9352313167259787,
+      "diff": 0.026331526957233287,
+      "ci_low": -0.038608447522957806,
+      "ci_high": 0.09127150143742438,
+      "p_value": 0.4266474247172485,
+      "n_control": 1427,
+      "n_treatment": 1405,
+      "name": "CSAT (1-5)",
+      "margin": -0.2,
+      "status": "PASS"
+    }
+  ],
+  "novelty_check": {
+    "first_week_pct": -11.681116034834758,
+    "last_week_pct": -7.689629579337977
+  }
+}

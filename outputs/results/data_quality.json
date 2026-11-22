@@ -1,0 +1,30 @@
+{
+  "raw_rows": 7015,
+  "duplicates": 15,
+  "missing": {
+    "category": 12,
+    "csat": 4176
+  },
+  "invalid_values": 0,
+  "srm": {
+    "A": 3565,
+    "B": 3435,
+    "chi2": 2.414285714285714,
+    "p_value": 0.12023280053681162,
+    "status": "PASS"
+  },
+  "srm_bug_demo": {
+    "A": 3565,
+    "B": 3261,
+    "chi2": 13.538822150600645,
+    "p_value": 0.0002336790014951795,
+    "status": "FAIL (SRM)"
+  },
+  "balance": {
+    "complexity_SMD": -0.0122,
+    "agent_pre_avg_hours_SMD": -0.0098,
+    "category_chi2_p": 0.043,
+    "priority_chi2_p": 0.5645
+  },
+  "clean_rows": 7000
+}
